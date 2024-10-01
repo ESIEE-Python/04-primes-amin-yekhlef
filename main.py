@@ -1,13 +1,19 @@
-from math import sqrt
+# from math import sqrt
 
 #### Fonction secondaire
 
 
 def isprime(p):
 
-    # votre code ici
+    if p <= 1: 
+        return False
 
-    pass
+    for i in range(2,(p//2)+1,1):
+        if p % i == 0:
+            return False
+    return True
+
+   
 
 #### Fonction principale
 
